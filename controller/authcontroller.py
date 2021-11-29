@@ -4,7 +4,7 @@ from flask import render_template
 
 def checkAuth(email, password):
     db = mysql.connector.connect(
-            host="localhost",
+            host="websvrdb.c6bigksqpjev.us-east-1.rds.amazonaws.com",
             user="web_app",
             passwd="NewPass123!"
         )
