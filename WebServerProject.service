@@ -1,0 +1,10 @@
+[Unit]
+Description=My web server project service
+After=network.target
+[Service]
+User=ec2-user
+Restart=always
+WorkingDirectory=/home/ec2-user/WebServerProject
+ExecStart=/usr/bin/python3 app.py
+[Install]
+WantedBy=multi-user.target
